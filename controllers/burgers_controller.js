@@ -19,6 +19,11 @@ router.get("/", function (req, res) {
     });
 });
 
-// post?
+// post? Think this is correct...check activities
+router.post('/', function (req, res) {
+    burger.insertOne(req.body.burger_name, function () {
+        res.redirect('/');
+    });
+});
 
 // put?...check past activities and class notes from 11-3
