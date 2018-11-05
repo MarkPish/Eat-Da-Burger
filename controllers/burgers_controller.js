@@ -27,3 +27,13 @@ router.post('/', function (req, res) {
 });
 
 // put?...check past activities and class notes from 11-3
+router.put('/:id', function (req, res) {
+    var id = req.params.id;
+
+    console.log('id', id);
+    burger.updateOne(id, function() {
+        res.redirect('/');
+    });
+});
+// export router
+module.exports = router;
