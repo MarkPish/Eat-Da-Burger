@@ -4,3 +4,11 @@ body {
     background-image: url('../images/burger.jpg');
 }
 
+h1 {
+    margin: auto 0;
+    margin-left: 20%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+/* finish css */
